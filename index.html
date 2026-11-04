@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <div class="gallery">
+        <img class="preview" 
+             src="https://unsplash.com" 
+             alt="Bãi biển hoàng hôn rực rỡ" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()">
+
+        <img class="preview" 
+             src="https://unsplash.com" 
+             alt="Rừng núi xanh mướt sương mù" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()">
+
+        <img class="preview" 
+             src="https://unsplash.com" 
+             alt="Con đường gỗ xuyên qua rừng cổ thụ" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
